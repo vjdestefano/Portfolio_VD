@@ -1,5 +1,7 @@
 #portfolioHeader{
   padding-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #portfolioHeader li a{
@@ -7,10 +9,25 @@
   padding-top: 0;
 }
 
-#row1{
-  background-color: #ef6c00;
+#row1Body{
+  margin-left: 1%;
+  margin-right: 7%;
+}
+
+#row1Body.container{
+  margin-left: 0;
+  width: 100%;
 }
 
 .row1{
   background-color: #ef6c00;
+}
+
+#iconMain{
+  padding-left:0;
+  padding-right:0;
+}
+
+#iconRow{
+  padding: 2%;
 }

@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
@@ -17,74 +17,84 @@
 </head>
 
 <body>
-    <div  id= "portfolioHeader"class="jumbotron jumbotron-fluid z-depth-3">
-        <div class="container">
-          <h1 class=" center display-3">Vincent Destefano's Portfolio</h1>
-          <p class=" center lead">Web Dev and Game Designer!</p>
-        </div>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
-            <ul class="navbar-nav">
-              <li class="navbar-item">
-                <a class="nav-link" href="#">Giftastic!</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link trending" href="#">Trending</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link random" id="random" href="#"><span class="badge badge-danger">NSFW</span>Random!</a>
-              </li>
-            </ul>
-          </nav>
+  <div id="portfolioHeader" class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class=" center display-3">Vincent Destefano's Portfolio</h1>
+      <p class=" center lead">Web Dev and Game Designer!</p>
+    </div>
+    <div class="navbar-mobile">
+    <nav>
+      <div class="nav-wrapper bg-dark navbar-dark ">
+        <a href="#!" class="brand-logo">Portfolio</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+        </ul>
       </div>
-      <!-- end of name section section -->
+    </nav>
+  </div>
+  </div>
+  <!-- end of name section section -->
 
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-              <div class="card-panel hoverable row1">
-                  <span class="white-text">functioning aspects of this site, materialize, bootstrap, JavaScript, HTML, and CSS! 
-                  </span>
-                </div>
-              </div>
-              <div class=" col-4 card row1">
-                  <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/CyclerTeaser.PNG">
-                  </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    <p><a href="https://vjdestefano.github.io/Project-1/">Cycler</a></p>
-                  </div>
-                  <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Card Title</span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                  </div>
-                </div>
-                <div class="card-panel hoverable row1">
-                    <div class="col-4">
+  <div id = "row1Body" class="container">
+    <div class="row">
+      <div class=" col-xs-12 col-sm-12 col-md-4 ">
+        <div class="card-panel hoverable row1">
+              <span class="white-text">About Me:
+                <ul>
+                  <li>Quinnipiac University Graduate</li>
+                  <li>Game Design and Dev Major w/ Computer Science Minor</li>
+                  <li>Rutger's Coding Bootcamp Alumni</li>
+                </ul>
+              </span>
+        </div>
+        <div class="card-panel hoverable row1">
+          <span class="white-text">functioning aspects of this site, materialize, bootstrap, JavaScript, HTML, and CSS!
+          </span>
+        </div>
+      </div>
 
-                    </div>
-                    <div class="col-4">
+      <div class=" col-xs-6 col-sm-6 col-md-4 card row1">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/CyclerTeaser.PNG" href="https://vjdestefano.github.io/Project-1/" >
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title
+            <i class="material-icons right">more_vert</i>
+          </span>
+          <p>
+            <a href="https://vjdestefano.github.io/Project-1/">Cycler</a>
+          </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">
+            <i class="material-icons right">close</i>Card Title</span>
+          <p>Project 1 for Rutger's Coding Bootcamp. The app is called Cycler. It's a 3D rendered area that allows users to view gifs, Youtube videos, and Wikipedia facts right from their device. We used API calls to get data from the sites listed above, and we used googles speech-to-text to drive an interesting experience for the user!</p>
 
-                    </div>
-                    <div class="col-4">
-                      
-                    </div>
-                  </div>
-                </div>
+        </div>
+      </div>
 
-            </div>
-          </div>
-
+      <div id ="iconMain" class=" col-xs-4 col-sm-4 col-md-4">
+        <div id="iconRow" class="card-panel hoverable row1">
         
+              <a href="https://github.com/vjdestefano"><img src="./images/github-128.png" class="social" alt="GitHub" /></a>
+              <a href="#"><img src="./images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        
+        </div>
+      </div>
+    </div>
+  </div>
 
-      
 
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script src="portfolioWork.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="portfolioWork.js"></script>
 </body>
 
 </html>
