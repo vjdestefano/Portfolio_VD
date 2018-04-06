@@ -9,13 +9,12 @@
   padding-top: 0;
 }
 
-#row1Body{
+/* #row1Body{
   margin-left: 1%;
   margin-right: 7%;
-}
+} */
 
 #row1Body.container{
-  margin-left: 0;
   width: 100%;
 }
 
@@ -23,10 +22,16 @@
   background-color: #ef6c00;
 }
 
-#iconMain{
-  padding-left:0;
-  padding-right:0;
+#cyclerTease{
+padding-right: 10px;
 }
+
+#iconMain{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+
 
 #iconRow{
   padding: 2%;
