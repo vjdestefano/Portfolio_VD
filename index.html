@@ -23,47 +23,51 @@
       <p class=" center lead">Web Dev and Game Designer!</p>
     </div>
     <div class="navbar-mobile">
-    <nav>
-      <div class="nav-wrapper bg-dark navbar-dark ">
-        <a href="#!" class="brand-logo">Portfolio</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+      <nav>
+        <div class="nav-wrapper bg-dark navbar-dark ">
+          <a href="#!" class="center brand-logo">Portfolio</a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="sass.html">Sass</a>
+            </li>
+            <li>
+              <a href="badges.html">Components</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </div>
   <!-- end of name section section -->
 
-  <div id = "row1Body" class="container">
+  <div id="row1Body" class="container">
     <div class="row">
       <div class=" col-xs-12 col-sm-12 col-md-4 ">
-        <div  id='testWidth' class="card-panel hoverable row1">
+        <div id='testWidth' class="card-panel hoverable row1">
           <div id="innerTest">
-             <span class="white-text">About Me:
-                <ul>
-                  <li>Quinnipiac University Graduate</li>
-                  <li>Game Design and Dev Major w/ Computer Science Minor</li>
-                  <li>Rutger's Coding Bootcamp Alumni</li>
-                </ul>
-                <!-- <img id='profilePic'  src="./images/profile-pic.jpg"> -->
-              </span>
+            <span class="white-text">About Me:
+              <ul>
+                <li>Quinnipiac University Graduate</li>
+                <li>Game Design and Dev Major w/ Computer Science Minor</li>
+                <li>Rutger's Coding Bootcamp Alumni</li>
+              </ul>
+              <!-- <img id='profilePic'  src="./images/profile-pic.jpg"> -->
+            </span>
           </div>
-             
+
         </div>
         <div class="card-panel hoverable row1">
-          <span class="white-text">functioning aspects of this site, materialize, bootstrap, JavaScript, HTML, and CSS!
+          <span class="white-text">Functioning aspects of this site, materialize, bootstrap, JavaScript, HTML, and CSS!
           </span>
         </div>
       </div>
 
-      <div  id="cyclerTease" class=" col-xs-6 col-sm-6 col-md-4 card row1">
+      <div id="cyclerTease" class=" col-xs-6 col-sm-6 col-md-4 card row1">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/CyclerTeaser.PNG" href="https://vjdestefano.github.io/Project-1/" >
+          <img class="activator" src="images/CyclerTeaser.PNG" href="https://vjdestefano.github.io/Project-1/">
         </div>
         <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title
+          <span class="card-title activator grey-text text-darken-4">Cycler Preview
             <i class="material-icons right">more_vert</i>
           </span>
           <p>
@@ -72,32 +76,48 @@
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">
-            <i class="material-icons right">close</i>Card Title</span>
-          <p>Project 1 for Rutger's Coding Bootcamp. The app is called Cycler. It's a 3D rendered area that allows users to view gifs, Youtube videos, and Wikipedia facts right from their device. We used API calls to get data from the sites listed above, and we used googles speech-to-text to drive an interesting experience for the user!</p>
+            <i class="material-icons right">close</i>Cycler Synopsis</span>
+          <p>Project 1 for Rutger's Coding Bootcamp. The app is called Cycler. It's a 3D rendered area that allows users to
+            view gifs, Youtube videos, and Wikipedia facts right from their device. We used API calls to get data from the
+            sites listed above, and we used googles speech-to-text to drive an interesting experience for the user!</p>
 
         </div>
       </div>
 
-      <div id ="iconMain" class=" col-xs-4 col-sm-4 col-md-4">
-        <div id="iconRow" class="card-panel hoverable row1">
-        
-              <a href="https://github.com/vjdestefano"><img src="./images/github-128.png" class="social" alt="GitHub" /></a>
-              <a href="#"><img src="./images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        
+      <div id="iconMain" class=" col-xs-4 col-sm-4 col-md-4">
+        <div id="iconRow" class="card-panel row1">
+
+          <a href="https://github.com/vjdestefano">
+            <img src="./images/github-128.png" class="social hoverable" alt="GitHub" />
+          </a>
+          <a href="#">
+            <img src="./images/linkedin-128.png" class="social hoverable" alt="LinkedIn" />
+          </a>
+
         </div>
       </div>
     </div>
   </div>
 
   <div id="row2Body" class="container">
-    <div class="row">
-      <div class="col-xs-7 offset-3">
-          <div class="card-panel hoverable row1">
-              <span class="white-text">Proficient with node.js!
-              </span>
+    <div  id="liriBotRow" class="row">
+      <div class="col-xs-6 col-md-6 col-lg-6">
+        <div class="card-panel row1 z-depth-3">
+          <span class="white-text">Proficient with node.js! Ask my Liri Bot something!
+            <div class="input-group input-group-lg">
+              <input id="liriInput" Placeholder = "Ask Liri Here!" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+              <div id = "askLiri" class="input-group-prepend">
+                <span class="input-group-text hoverable">Ask Liri</span>
+              </div>
+            </div>
+          </span>
         </div>
-
       </div>
+      <div class="col-xs-6 col-md-6 col-lg-6">
+          <div id="testAnim" class="card-panel row1 z-depth-3" style="display: none;">
+            <p>test this</p>
+          </div>
+        </div>
     </div>
   </div>
 
@@ -109,9 +129,9 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="portfolioWork.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="portfolioWork.js"></script>
 </body>
 
 </html>
