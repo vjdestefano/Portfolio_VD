@@ -1,3 +1,9 @@
+$(document).ready(function(){
+  $('.parallax').parallax();
+});
+
+
+
 
 $(document).ready(function() {
   var profPic = $('<img>').attr("src","./images/profile-pic.jpg");
