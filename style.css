@@ -1,6 +1,6 @@
 body{
   font-family: 'Coda', cursive;
-
+  background-color: #757575;
 }
 
 #portfolioHeader{
@@ -29,6 +29,7 @@ body{
 
 #row1Body.container{
   width: 100%;
+
 }
 
 #profilePic{

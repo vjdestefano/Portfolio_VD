@@ -1,8 +1,35 @@
+
+function portfolioAnimation(el){
+
+  el.animate({height: ($("#row1Body").innerHeight()), opacity: '0.5'}, 200);
+  el.animate({height: ($("#row1Body").innerHeight()), opacity: '0.8'}, 300 );
+  el.animate({height: ($("#row1Body").innerHeight()), opacity: '1'}, 300 );
+
+}
+
+
+$(document).ready(function(){
+  $('.scrollspy').scrollSpy();
+});
+
 $(document).ready(function(){
   $('.parallax').parallax();
 });
 
+$(document).ready(function(){
+$("#row1Body").attr("style", "opacity: 0;");
+});
 
+
+var options = [
+  {selector: '#portfolioHeader', offset: 50, callback: function(el) {
+    Materialize.toast("Welcome to my site!", 3000 );
+  } },
+  {selector: '#row1Body', offset: 500, callback: function(el) {
+    portfolioAnimation($(el));
+  } },
+];
+Materialize.scrollFire(options);
 
 
 $(document).ready(function() {
