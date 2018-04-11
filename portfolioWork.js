@@ -7,7 +7,6 @@ function portfolioAnimation(el){
 
 }
 
-
 $(document).ready(function(){
   $('.scrollspy').scrollSpy();
 });
