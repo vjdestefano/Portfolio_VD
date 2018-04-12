@@ -1,9 +1,10 @@
 
 function portfolioAnimation(el){
 
-  el.animate({height: ($("#row1Body").innerHeight()), opacity: '0.5'}, 200);
-  el.animate({height: ($("#row1Body").innerHeight()), opacity: '0.8'}, 300 );
-  el.animate({height: ($("#row1Body").innerHeight()), opacity: '1'}, 300 );
+  el.animate({opacity: '1'}, 800);
+  // el.animate({height: ($("#aspects").innerHeight()), opacity: '1'}, 300 );
+  // el.animate({height: ($("#cyclerTease").innerHeight()), opacity: '1'}, 300 );
+  // el.animate({height: ($("#iconMain").innerHeight()), opacity: '1'}, 300 );
 
 }
 
