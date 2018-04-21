@@ -3,10 +3,10 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
-var path = require("path")
+var path = require("path");
 
 
-var PORT = proess.env.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -26,7 +26,7 @@ var test123 = [{
 
 // ==========================================================
 
-app.use(express.static('../FrontEnd'))
+app.use(express.static('../FrontEnd'));
 
 app.get('/', function(req,res){
   res.sendFile(path.join(__dirname,"../FrontEnd/index.html"));
