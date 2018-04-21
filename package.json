@@ -4,12 +4,22 @@
   "description": "",
   "main": "serverStarwars.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node serverStarwars.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjdestefano/Portfolio_VD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vjdestefano/Portfolio_VD/issues"
+  },
+  "homepage": "https://github.com/vjdestefano/Portfolio_VD#readme"
 }
