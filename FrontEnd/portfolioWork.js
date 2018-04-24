@@ -33,7 +33,7 @@ Materialize.scrollFire(options);
 
 
 $(document).ready(function() {
-  var profPic = $('<img>').attr("src","./images/profile-pic.jpg");
+  var profPic = $('<img>').attr("src","./FrontEnd/images/profile-pic.jpg");
   profPic.attr("width",($('#testWidth').innerWidth() * 1));
   profPic.attr("height",($('#testWidth').innerWidth() * .75));
   $("#testWidth").append(profPic)
