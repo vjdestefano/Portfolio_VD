@@ -30,7 +30,7 @@ var test123 = [{
 app.use(express.static('./FrontEnd'));
 
 app.get('/', function(req,res){
-  res.sendFile(path.join(__dirname,"./FrontEnd/index.html"));
+  res.sendFile(path.join(__dirname,"./index.html"));
   
 })
 
