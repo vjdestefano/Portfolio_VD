@@ -57,6 +57,8 @@ $("#askLiri").on("click", function(event){
 
 })
 
+
+//coding challenges completed
 function LetterChanges(str) { 
 
   var string = str.toLowerCase().split('');
@@ -106,3 +108,21 @@ function LetterCapitalize(str) {
     
     return newArr.join(' '); 
    }
+
+
+
+   function SimpleSymbols(str) { 
+    let string = str;
+    if((string.indexOf("+") === 0) || (string.indexOf("=") === 0)){
+      if((string.indexOf("+") == string.length) || (string.indexOf("=") == string.length)){
+       return true;
+
+      } 
+      return true;
+    } 
+    else{
+        return false;
+    }
+    }
+
+    console.log(SimpleSymbols("a++++"))
