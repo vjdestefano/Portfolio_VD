@@ -2,10 +2,7 @@
 function portfolioAnimation(el){
 
   el.animate({opacity: '1'}, 800);
-  // el.animate({height: ($("#aspects").innerHeight()), opacity: '1'}, 300 );
-  // el.animate({height: ($("#cyclerTease").innerHeight()), opacity: '1'}, 300 );
-  // el.animate({height: ($("#iconMain").innerHeight()), opacity: '1'}, 300 );
-
+ 
 }
 
 $(document).ready(function(){
@@ -55,5 +52,42 @@ $("#askLiri").on("click", function(event){
   console.log(liriInput2);
   $("#liriInput").val('');
   $("#testAnim").slideDown(750);
+  $("#testAnim").text(LetterChanges(liriInput2));
 
 })
+
+function LetterChanges(str) { 
+
+  var string = str.toLowerCase().split('');
+  let arr = [];
+  for(let i = 0; i < string.length; i++){
+      
+  let numberIn = string[i].charCodeAt();
+  
+  if(numberIn >= 32 && numberIn <= 64 ){
+      --numberIn;
+  }
+  if(numberIn >= 91 && numberIn <= 96 ){
+     -- numberIn;
+  }
+  if(numberIn == 122){
+      numberIn = 96;
+  }
+  if(numberIn >= 123 && numberIn <= 126 ){
+      --numberIn;
+  }
+ // numberIn++;
+  let letter = String.fromCharCode(++numberIn);
+
+  if(letter == ("a") || letter == ("e") || letter == ("i") || letter == ("o") || letter == ("u")){
+     let test = letter.toUpperCase();
+      arr.push(test); 
+  }
+  else{
+      arr.push(letter);
+ 
+  }
+}
+return arr.join(''); 
+       
+}
