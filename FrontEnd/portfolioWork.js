@@ -92,3 +92,17 @@ function LetterChanges(str) {
 return arr.join(''); 
        
 }
+
+function LetterCapitalize(str) { 
+  let string  = str.split(' ');
+  let newArr = [];
+  string.forEach(function (element){
+      let first = element.charAt(0);
+      let res = element.slice(1,element.length);
+      let cap = first.toUpperCase();
+      let test = cap.concat(res);
+      newArr.push(test)
+  })
+    
+    return newArr.join(' '); 
+   }
