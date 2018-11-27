@@ -42,6 +42,7 @@ if(event.key === "Enter"){
   var liriInput = $("#liriInput").val();
   console.log(liriInput);
   $("#liriInput").val('');
+  $("#testAnim").text(LetterChanges(liriInput));
 }
 });
 
